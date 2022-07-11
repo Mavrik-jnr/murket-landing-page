@@ -1,0 +1,27 @@
+//700px, 900, 1440px
+
+$breakpoints-up: (
+  "medium": 43.75em,
+  "large": 56.25em,
+  "xlarge": 90em,
+);
+
+//this is a function that takes in variables, it is activated with include, and maps; which are objects, can get passed into these mixins to create dynamic styles
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+// for max width breakpoints. i.e all widths from passed in argument down would have content specified in mixin
+
+$breakpoints-down: (
+  "small": 43.7485em,
+  "medium": 56.24875em,
+  "large:": 89.99875em,
+);
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

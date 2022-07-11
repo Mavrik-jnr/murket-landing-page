@@ -1,0 +1,28 @@
+@use "./colors" as lp;
+@use "../util" as *;
+
+html {
+  box-sizing: border-box;
+  font: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  background-color: lp.$bg-color;
+  color: lp.$color;
+  //   background-color: red;
+}
+
+.big__square {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
