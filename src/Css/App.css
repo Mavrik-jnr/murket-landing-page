@@ -1,3 +1,12 @@
-* {
-  background-color: blue;
+.App {
+  display: grid;
+  background-image: #fafafa;
+  grid-template-columns: repeat();
+  height: 692px;
+}
+
+.svg {
+  height: 200px;
+  width: 200px;
+  border: 5px black;
 }
