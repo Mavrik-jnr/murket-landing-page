@@ -1,15 +1,8 @@
 @use "./globals/colors" as color;
 .App {
-  display: grid;
+  // display: grid;
   background-image: color.$bg-ash;
-  grid-template-columns: repeat();
+  // grid-template-columns: repeat();
   // max-width: 72%;
-  height: 692px;
-}
-
-.svg {
-  // background: url(gs://murkets.appspot.com/cart.svg);
-  height: 200px;
-  width: 200px;
-  border: 5px black;
+  // height: 692px;
 }

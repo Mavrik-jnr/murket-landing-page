@@ -64,24 +64,45 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-weight: 700;
   line-height: 1.3;
   margin-top: 0;
 }
 
 h1 {
-  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+  font-size: clamp(2.5rem, 1rem + 2vw, 3.625rem);
 }
 
 h2 {
-  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+  font-size: clamp(1.875rem, 0.875rem + 1.5vw, 2.5rem);
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.3;
 }
 
 p {
   margin-top: 0;
-  font-size: 1.25pxrem;
+  font-size: 1pxrem;
 }
 
 a,

@@ -11,12 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Button /> */}
-      <div
-        style={{
-          backgroundImage: "https://murkets.appspot.com/image.png",
-        }}></div>
       <h1>Google</h1>
+      <h2>Facebook</h2>
+      <Button />
     </div>
   );
 }

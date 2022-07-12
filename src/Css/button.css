@@ -1,3 +1,10 @@
-button {
-  background-color: yellow;
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.button.primary {
+  height: 48px;
+  padding: 10px 36px;
 }
