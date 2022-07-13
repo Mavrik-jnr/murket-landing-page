@@ -1,8 +1,10 @@
 import "../Css/button.css";
 import React from "react";
 
-function Button() {
-  return <button className="button primary">Hello People</button>;
+function Button({ variant, text }) {
+  return (
+    <button className={variant ? variant + " button" : "button"}>{text}</button>
+  );
 }
 
 export default Button;

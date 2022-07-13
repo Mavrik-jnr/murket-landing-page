@@ -1,3 +1,113 @@
 .App {
   background-image: #fafafa;
+  height: 200vh;
+}
+
+.header {
+  position: fixed;
+  margin: 0;
+  display: flex;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 24px;
+  padding-inline-start: clamp(10px, 10px + 10vw, 195px);
+  padding-inline-end: clamp(10px, 10px + 10vw, 40px);
+}
+.header__logo {
+  flex-basis: 50%;
+}
+@media (max-width: 56.24875em) {
+  .header__logo {
+    flex-basis: 70%;
+  }
+}
+.header__logo .image {
+  width: 99px;
+  height: 24px;
+}
+.header__nav-buttons {
+  display: flex;
+  flex-basis: 40%;
+  align-self: center;
+  justify-content: space-between;
+}
+@media (max-width: 56.24875em) {
+  .header__nav-buttons {
+    justify-content: flex-end;
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+}
+.header__nav-buttons__links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 70%;
+  color: #737373;
+}
+@media (max-width: 56.24875em) {
+  .header__nav-buttons__links {
+    display: none;
+  }
+}
+.header__nav-buttons__icons {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__nav-buttons__icons img {
+  height: 20px;
+  width: 20px;
+}
+@media (max-width: 56.24875em) {
+  .header__nav-buttons__icons {
+    flex-basis: 50%;
+  }
+}
+.header .toggler {
+  cursor: pointer;
+}
+.header .toggler img {
+  height: 20px;
+  width: 20px;
+}
+
+.hero-content {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero-content__text {
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+.hero-content__text h1 {
+  color: #252b42;
+  width: 60%;
+}
+.hero-content__text h1 span {
+  position: relative;
+  background: linear-gradient(-90deg, #d71489, #004788);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-content__text h1 span img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.hero-content__text h4 {
+  width: 65%;
+  color: #737373;
+  font-weight: 400;
+}
+.hero-content__buttons button {
+  margin-right: 10px;
 }
