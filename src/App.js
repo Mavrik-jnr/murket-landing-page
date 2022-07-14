@@ -7,7 +7,13 @@ import Search from "./assets/search.svg";
 import Cart from "./assets/cart.svg";
 import Toggler from "./assets/navbar-toggler-icon.svg";
 import Line from "./assets/Line.svg";
-
+import Feature from "./Components/Feature.js";
+import Briefcase from "./assets/briefcase.svg";
+import Shop from "./assets/shop.svg";
+import Growing from "./assets/growing.svg";
+import People from "./assets/people.svg";
+import Link from "./assets/link.svg";
+import Web from "./assets/achievement.svg";
 function App() {
   // const img = new URL("murkets.appspot.com/image.png");
   useEffect(() => {
@@ -54,6 +60,50 @@ function App() {
           </div>
         </div>
       </article>
+
+      <section className="why">
+        <div className="why__header">
+          <h2 className="why__title">WHY CHOOSE US</h2>
+          <h6 className="why__description">
+            We have pushed over{" "}
+            <span className="why__description__link">100 businesses</span> from
+            the ground up, and they are still up there.
+          </h6>
+        </div>
+
+        <div className="why__feature-grid">
+          <Feature
+            icon={Briefcase}
+            title="Digital Marketing"
+            text="We put your business in front of the right people, focusing on SEO, Social media attention, and other relevant Marketing schemes"
+          />
+          <Feature
+            icon={Shop}
+            title="Brand Identity"
+            text="Is your brand missing it’s voice? we will give you one, on the house! Here at musket we beleive in having an identity over everything"
+          />
+          <Feature
+            icon={Growing}
+            title="Business Growing"
+            text="Watch your Stocks fly through the roof, all without being a bubble"
+          />
+          <Feature
+            icon={People}
+            title="Forbes top 50 firms"
+            text="We hit forbes top 50 firms providing value to new business, you’re in well known hands."
+          />
+          <Feature
+            icon={Link}
+            title="National top 50 firms"
+            text="We hit Natioal top 50 firms providing value to new business, you’re in safe hands."
+          />
+          <Feature
+            icon={Web}
+            title="Web Development"
+            text="We have an in house agency with the brightest minds, making your web products functional and, of-course beautiful"
+          />
+        </div>
+      </section>
     </div>
   );
 }

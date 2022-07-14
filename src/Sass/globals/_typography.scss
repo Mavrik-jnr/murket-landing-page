@@ -12,13 +12,13 @@ h1 {
   margin: 0;
   //clamp helps us define min max type scaling across screen sizes
   // font-size: clamp(28px, 16px + 2vw, 40px);
-  font-size: clamp(util.rem(40), util.rem(16) + 6vw, util.rem(58));
+  font-size: clamp(util.rem(40), util.rem(16) + 5vw, util.rem(58));
 }
 
 h2 {
   margin: 0;
   // font-size: clamp(22px, 14px + 1.5vw, 36px);
-  font-size: clamp(util.rem(30), util.rem(14) + 1.5vw, util.rem(40));
+  font-size: clamp(util.rem(30), util.rem(16) + 1.5vw, util.rem(40));
   //Use REM units for accessibility in your browser, allowing type to scale based on user preferences
   //Use pixels for real life measurements of page elements, like assets. this keeps it static across screens.
 }

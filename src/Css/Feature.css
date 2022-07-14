@@ -1,0 +1,31 @@
+.card {
+  width: 328px;
+  height: 193px;
+  border: 1px solid #e8e8e8;
+  padding-top: 24px;
+  padding-left: 32px;
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: 270px;
+  gap: 12px;
+}
+.card__content__header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.card__content__header__icon {
+  margin-right: 16px;
+  height: 48px;
+  width: 48px;
+}
+.card__content__header__title {
+  color: #252b42;
+}
+.card__content__text {
+  width: 100%;
+  color: #737373;
+  font-weight: 400;
+}

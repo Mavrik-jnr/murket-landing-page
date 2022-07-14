@@ -1,0 +1,38 @@
+@use "../Sass/globals/colors" as color;
+.card {
+  width: 328px;
+  height: 193px;
+  border: 1px solid #e8e8e8;
+  padding-top: 24px;
+  padding-left: 32px;
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: 270px;
+  gap: 12px;
+
+  &__header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    // background-color: red;
+
+    &__icon {
+      margin-right: 16px;
+      height: 48px;
+      width: 48px;
+    }
+    &__title {
+      color: color.$text-color-heading;
+
+      // height: 20px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    color: color.$second-text-color;
+    font-weight: 400;
+  }
+}

@@ -2,15 +2,17 @@
 @use "./layout/breakpoints" as u;
 .App {
   // display: grid;
-  background-image: color.$bg-ash;
+  background-color: color.$bg-ash;
   // grid-template-columns: repeat();
   // max-width: 72%;
   // height: 692px;
-  height: 200vh;
+  height: 300vh;
 }
 
 .header {
   position: fixed;
+  // background-color: white;
+
   margin: 0;
   display: flex;
   grid-template-columns: auto auto;
@@ -49,7 +51,30 @@
       display: flex;
       justify-content: space-between;
       flex-basis: 70%;
+
       color: color.$second-text-color;
+      h6 {
+        // display: none;
+        position: relative;
+        cursor: pointer;
+        transition: 1s all;
+        &::before {
+          content: " ";
+          // display: none;
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          bottom: 0px;
+          // left: 10px;
+          background-color: color.$secondary-color-1;
+          transition: 0.3s ease-in;
+        }
+        &:hover::before {
+          // display: block;
+
+          width: 100%;
+        }
+      }
 
       @include u.breakpoint-down("medium") {
         display: none;
@@ -60,6 +85,7 @@
       flex-basis: 20%;
       justify-content: space-evenly;
       align-items: center;
+      cursor: pointer;
       // width: ;
       img {
         height: 20px;
@@ -120,6 +146,60 @@
   &__buttons {
     button {
       margin-right: 10px;
+    }
+  }
+}
+
+.why {
+  background-color: white;
+  // display: flex;
+  padding-top: 145px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    h2 {
+      margin-bottom: 10px;
+      color: color.$text-color-heading;
+    }
+
+    h6 {
+      color: color.$second-text-color;
+    }
+
+    span {
+      position: relative;
+      color: color.$primary-color;
+      &::before {
+        content: " ";
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0px;
+        // left: 10px;
+        background-color: color.$secondary-color-1;
+      }
+    }
+  }
+
+  &__feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 80%;
+    justify-content: center;
+    margin-inline: auto;
+    padding-bottom: 120px;
+    @include u.breakpoint-down("medium") {
+      grid-template-columns: auto auto;
+    }
+    @include u.breakpoint-down("small") {
+      grid-template-columns: auto;
     }
   }
 }

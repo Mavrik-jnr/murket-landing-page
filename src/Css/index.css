@@ -24,12 +24,12 @@ h2 {
 
 h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 1rem + 6vw, 3.625rem);
+  font-size: clamp(2.5rem, 1rem + 5vw, 3.625rem);
 }
 
 h2 {
   margin: 0;
-  font-size: clamp(1.875rem, 0.875rem + 1.5vw, 2.5rem);
+  font-size: clamp(1.875rem, 1rem + 1.5vw, 2.5rem);
 }
 
 h3 {
