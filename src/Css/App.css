@@ -180,3 +180,24 @@
     grid-template-columns: auto;
   }
 }
+
+.services__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.services__header h2 {
+  margin-bottom: 10px;
+  color: #252b42;
+}
+.services__header h6 {
+  color: #737373;
+}
+.services__header__green-bar {
+  height: 20%;
+  width: 100%;
+  background-color: #16697a;
+  padding: 30px;
+}

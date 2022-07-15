@@ -104,6 +104,29 @@ function App() {
           />
         </div>
       </section>
+      <section className="services">
+        <div className="services__header">
+          <h2 className="services__header__title">
+            We are providing best business services
+          </h2>
+          <h6 className="services__header__description">
+            And the proof is in the pudding, our safe work environment, work
+            ethic, and values put us on the map, we simply provide the best to
+            our customers
+          </h6>
+        </div>
+        <div className="video">
+          <iframe
+            width="877"
+            height="442"
+            src="https://www.youtube.com/embed/9VAIFBs8qDY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div className="services__green-bar"></div>
+      </section>
     </div>
   );
 }
