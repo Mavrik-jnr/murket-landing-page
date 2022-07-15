@@ -1,6 +1,6 @@
 .App {
   background-color: #fafafa;
-  height: 300vh;
+  height: 500vh;
 }
 
 .header {
@@ -147,6 +147,7 @@
 }
 .why__header h6 {
   color: #737373;
+  width: 70%;
 }
 .why__header span {
   position: relative;
@@ -181,6 +182,12 @@
   }
 }
 
+.services {
+  position: relative;
+  height: 100vh;
+  background-color: #fafafa;
+  padding-top: clamp(45px, 1rem + 5vw, 80px);
+}
 .services__header {
   display: flex;
   flex-direction: column;
@@ -191,12 +198,32 @@
 .services__header h2 {
   margin-bottom: 10px;
   color: #252b42;
+  width: 70%;
 }
 .services__header h6 {
   color: #737373;
+  width: 60%;
 }
-.services__header__green-bar {
-  height: 20%;
+.services .video {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  z-index: 2;
+  width: 60%;
+  height: 60%;
+  margin-inline: auto;
+}
+.services .video iframe {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.services__green-bar {
+  position: absolute;
+  bottom: 0px;
+  height: 45%;
   width: 100%;
   background-color: #16697a;
   padding: 30px;
