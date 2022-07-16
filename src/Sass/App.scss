@@ -206,15 +206,17 @@
 }
 
 .services {
+  display: grid;
   position: relative;
   height: 100vh;
   background-color: color.$bg-ash;
   padding-top: clamp(45px, 1rem + 5vw, 80px);
+  gap: 0px;
   &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
     text-align: center;
 
     h2 {
@@ -231,12 +233,12 @@
 
   .video {
     position: absolute;
-    bottom: 5%;
-    left: 20%;
+    top: 250px;
     z-index: 2;
     width: 60%;
-    height: 60%;
+    height: 55%;
     margin-inline: auto;
+    left: 20%;
 
     iframe {
       position: relative;
@@ -252,7 +254,7 @@
     position: absolute;
     bottom: 0px;
     // z-index: 999;
-    height: 45%;
+    height: 40%;
     width: 100%;
     background-color: color.$secondary-color-2;
     padding: 30px;

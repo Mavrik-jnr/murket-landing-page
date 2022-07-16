@@ -183,16 +183,17 @@
 }
 
 .services {
+  display: grid;
   position: relative;
   height: 100vh;
   background-color: #fafafa;
   padding-top: clamp(45px, 1rem + 5vw, 80px);
+  gap: 0px;
 }
 .services__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 45px;
   text-align: center;
 }
 .services__header h2 {
@@ -206,12 +207,12 @@
 }
 .services .video {
   position: absolute;
-  bottom: 5%;
-  left: 20%;
+  top: 250px;
   z-index: 2;
   width: 60%;
-  height: 60%;
+  height: 55%;
   margin-inline: auto;
+  left: 20%;
 }
 .services .video iframe {
   position: relative;
@@ -223,7 +224,7 @@
 .services__green-bar {
   position: absolute;
   bottom: 0px;
-  height: 45%;
+  height: 40%;
   width: 100%;
   background-color: #16697a;
   padding: 30px;
