@@ -260,3 +260,26 @@
     padding: 30px;
   }
 }
+.testimonials {
+  background-color: color.$bg-ash;
+  padding-top: 80px;
+  gap: 0px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-bottom: 45px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 10px;
+      color: color.$text-color-heading;
+      width: 70%;
+    }
+
+    h6 {
+      color: color.$second-text-color;
+      width: 60%;
+    }
+  }
+}

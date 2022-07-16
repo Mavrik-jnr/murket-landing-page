@@ -14,6 +14,7 @@ import Growing from "./assets/growing.svg";
 import People from "./assets/people.svg";
 import Link from "./assets/link.svg";
 import Web from "./assets/achievement.svg";
+import Testimonial from "./Components/Testimonial.js";
 function App() {
   // const img = new URL("murkets.appspot.com/image.png");
   useEffect(() => {
@@ -126,6 +127,21 @@ function App() {
             allowfullscreen></iframe>
         </div>
         <div className="services__green-bar"></div>
+      </section>
+
+      <section className="testimonials">
+        <div className="testimonials__header">
+          <h2 className="testimonials__header__title">What Clients Say</h2>
+          <h6 className="services__header__description">
+            Positive reviews from now prominent businesses
+          </h6>
+        </div>
+
+        <div className="testimonials__cards">
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+        </div>
       </section>
     </div>
   );
