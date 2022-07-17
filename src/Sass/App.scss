@@ -22,6 +22,7 @@
   padding-top: 24px;
   padding-inline-start: clamp(10px, 10px + 10vw, 195px);
   padding-inline-end: clamp(10px, 10px + 10vw, 40px);
+  z-index: 999;
   &__logo {
     // display: none;
     flex-basis: 50%;
