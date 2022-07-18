@@ -15,6 +15,10 @@ import People from "./assets/people.svg";
 import Link from "./assets/link.svg";
 import Web from "./assets/achievement.svg";
 import Testimonial from "./Components/Testimonial.js";
+import ola from "./assets/ola.png";
+import reggie from "./assets/reggie.png";
+import regina from "./assets/regina.png";
+
 function App() {
   // const img = new URL("murkets.appspot.com/image.png");
   useEffect(() => {
@@ -138,9 +142,30 @@ function App() {
         </div>
 
         <div className="testimonials__cards">
-          <Testimonial />
-          <Testimonial />
-          <Testimonial />
+          <Testimonial
+            img={ola}
+            text={
+              "Murket, put my market in shape. Clients came in from unexpected places, and the company just grew from there"
+            }
+            person_name={"Olalu Asake"}
+            person_title={"CEO, Akara Inc."}
+          />
+          <Testimonial
+            img={reggie}
+            text={
+              "Murket pushed us straight where we wanted to be, Far ahead of our cut-throat competition"
+            }
+            person_name={"Reggie Miller"}
+            person_title={"CTO, Billings Co."}
+          />
+          <Testimonial
+            img={regina}
+            text={
+              "Murket helped us see how many more days you need to work to reach your financial goal."
+            }
+            person_name={"Regina Miles"}
+            person_title={"CEO, Angel Agency."}
+          />
         </div>
       </section>
     </div>

@@ -1,0 +1,32 @@
+@use "./globals/colors" as color;
+.card-T {
+  display: grid;
+  height: 244px;
+  width: 327px;
+  border: 1px solid #dedede;
+  background-color: white;
+  padding: 30px 35px;
+  gap: 20px;
+
+  &__comment {
+    color: color.$second-text-color;
+    // margin-bottom: 20px;
+  }
+  &__profile {
+    // margin-top: 20px;
+    padding: 0px;
+    height: 50px;
+    display: flex;
+    &__image {
+      margin-right: 15px;
+    }
+    &__info {
+      &__name {
+        color: color.$primary-color;
+      }
+      &__title {
+        color: color.$text-color-heading;
+      }
+    }
+  }
+}

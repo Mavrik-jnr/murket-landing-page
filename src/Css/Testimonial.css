@@ -1,1 +1,26 @@
-
+.card-T {
+  display: grid;
+  height: 244px;
+  width: 327px;
+  border: 1px solid #dedede;
+  background-color: white;
+  padding: 30px 35px;
+  gap: 20px;
+}
+.card-T__comment {
+  color: #737373;
+}
+.card-T__profile {
+  padding: 0px;
+  height: 50px;
+  display: flex;
+}
+.card-T__profile__image {
+  margin-right: 15px;
+}
+.card-T__profile__info__name {
+  color: #ffa62b;
+}
+.card-T__profile__info__title {
+  color: #252b42;
+}

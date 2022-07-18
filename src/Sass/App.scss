@@ -283,4 +283,18 @@
       width: 60%;
     }
   }
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin-top: 80px;
+    margin-inline: auto;
+
+    @include u.breakpoint-down("medium") {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+      gap: 30px;
+    }
+  }
 }
