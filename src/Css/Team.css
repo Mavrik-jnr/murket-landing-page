@@ -1,0 +1,25 @@
+.founder {
+  height: 373px;
+  border: 1px solid rgba(238, 238, 238, 0.9333333333);
+  display: grid;
+}
+.founder__content__info {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  gap: 5px;
+}
+.founder__content__info h5 {
+  text-align: center;
+  color: #252b42;
+}
+.founder__content__info h6 {
+  color: #737373;
+  text-align: center;
+}
+.founder__content__info__social-links {
+  gap: 16px;
+  display: flex;
+  justify-content: space-around;
+}

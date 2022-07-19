@@ -234,6 +234,7 @@
 .testimonials {
   background-color: #fafafa;
   padding-top: 80px;
+  padding-bottom: 100px;
   gap: 0px;
 }
 .testimonials__header {
@@ -260,6 +261,41 @@
 }
 @media (max-width: 69.0625em) {
   .testimonials__cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+  }
+}
+
+.team {
+  background-color: white;
+}
+.team__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  text-align: center;
+}
+.team__header h2 {
+  margin-bottom: 10px;
+  color: #252b42;
+  width: 70%;
+}
+.team__header h6 {
+  color: #737373;
+  width: 60%;
+}
+.team__cards {
+  display: flex;
+  max-width: 80%;
+  margin-top: 80px;
+  margin-inline: auto;
+  justify-content: space-around;
+}
+@media (max-width: 69.0625em) {
+  .team__cards {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;

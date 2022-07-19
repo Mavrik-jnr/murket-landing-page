@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import Button from "./Components/Button.js";
 import "./Css/App.css";
 // import { storageRef } from "./firebase.js";
+
+//Asset Imports
 import image from "./assets/Murket.png";
 import Search from "./assets/search.svg";
 import Cart from "./assets/cart.svg";
@@ -18,6 +20,10 @@ import Testimonial from "./Components/Testimonial.js";
 import ola from "./assets/ola.png";
 import reggie from "./assets/reggie.png";
 import regina from "./assets/regina.png";
+import Team from "./Components/Team.js";
+import avie from "./assets/avie.png";
+import rodney from "./assets/rodney.png";
+import ashley from "./assets/ashley.png";
 
 function App() {
   // const img = new URL("murkets.appspot.com/image.png");
@@ -166,6 +172,21 @@ function App() {
             person_name={"Regina Miles"}
             person_title={"CEO, Angel Agency."}
           />
+        </div>
+      </section>
+
+      <section className="team">
+        <div className="team__header">
+          <h2 className="team__header__title">Meet Our Team</h2>
+          <h6 className="team__header__description">
+            The mind behind the business
+          </h6>
+        </div>
+
+        <div className="team__cards">
+          <Team img={ashley} name={"Ashley Fetcher"} title={"CEO"} />
+          <Team img={rodney} name={"Rodney Stratton"} title={"Consultant"} />
+          <Team img={avie} name={"Avie Beaton"} title={"Co-founder"} />
         </div>
       </section>
     </div>
