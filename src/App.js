@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Button from "./Components/Button.js";
 import "./Css/App.css";
 // import { storageRef } from "./firebase.js";
@@ -24,9 +24,18 @@ import Team from "./Components/Team.js";
 import avie from "./assets/avie.png";
 import rodney from "./assets/rodney.png";
 import ashley from "./assets/ashley.png";
+import FormInput from "./Components/FormInput.js";
 
 function App() {
   // const img = new URL("murkets.appspot.com/image.png");
+  const [fullName, setFullName] = useState("");
+  const [Email, setEmail] = useState("");
+
+  // const handleForm = (e) => {
+  // e.preventDefault()
+  // setFullName(e.target.)
+  // }
+
   useEffect(() => {
     // console.log(img);
   }, []);
@@ -188,6 +197,32 @@ function App() {
           <Team img={rodney} name={"Rodney Stratton"} title={"Consultant"} />
           <Team img={avie} name={"Avie Beaton"} title={"Co-founder"} />
         </div>
+      </section>
+
+      <section className="appointment">
+        <div className="appointment__header">
+          <h5>Contact Us</h5>
+          <h2>Make an Appointment</h2>
+        </div>
+
+        <form className="appointment__form-container">
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => {
+              setFullName(e.target.value);
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            value={Email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </form>
       </section>
     </div>
   );
