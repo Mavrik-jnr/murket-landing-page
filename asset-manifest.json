@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/murket-landing-page/static/css/main.3ef89fb0.css",
+    "main.js": "/murket-landing-page/static/js/main.02dc0938.js",
+    "static/media/avie.png": "/murket-landing-page/static/media/avie.ca1685a97afd5e3241d2.png",
+    "static/media/rodney.png": "/murket-landing-page/static/media/rodney.aa5e29597199a05caa33.png",
+    "static/media/ashley.png": "/murket-landing-page/static/media/ashley.fe13e1d6578f0d25cc9c.png",
+    "static/media/stars.svg": "/murket-landing-page/static/media/stars.077a91680590565f3981883c1f3eaf28.svg",
+    "static/media/shop.svg": "/murket-landing-page/static/media/shop.ee1a88e76434f2b6d9f801e6175475e8.svg",
+    "static/media/people.svg": "/murket-landing-page/static/media/people.8168763f19e2f98ee8e5f069993c3830.svg",
+    "static/media/achievement.svg": "/murket-landing-page/static/media/achievement.76a9377db5c8a9c13cd754f4071f8925.svg",
+    "static/media/cart.svg": "/murket-landing-page/static/media/cart.5ded7c8d7ebf4e41e6f3b7c112a1274a.svg",
+    "static/media/search.svg": "/murket-landing-page/static/media/search.f6f9ee1a66245778af2cea9ad6079b2d.svg",
+    "static/media/link.svg": "/murket-landing-page/static/media/link.425c12f9b2ef0361bc6aa711267e345a.svg",
+    "static/media/briefcase.svg": "/murket-landing-page/static/media/briefcase.ac9456503038c7a18752e917cb67c551.svg",
+    "static/media/growing.svg": "/murket-landing-page/static/media/growing.e2eb4c67e8c718e56985b4be34779c14.svg",
+    "index.html": "/murket-landing-page/index.html",
+    "static/media/navbar-toggler-icon.svg": "/murket-landing-page/static/media/navbar-toggler-icon.880ee9d26072bccb6d1d2382221b81bb.svg",
+    "static/media/Line.svg": "/murket-landing-page/static/media/Line.d952303a5287186e43a968448c1cbfe6.svg",
+    "main.3ef89fb0.css.map": "/murket-landing-page/static/css/main.3ef89fb0.css.map",
+    "main.02dc0938.js.map": "/murket-landing-page/static/js/main.02dc0938.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ef89fb0.css",
+    "static/js/main.02dc0938.js"
+  ]
+}
